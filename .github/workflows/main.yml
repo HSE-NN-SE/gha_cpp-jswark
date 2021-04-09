@@ -54,9 +54,9 @@ jobs:
 
 
 
-     - name: send mes
-       uses: appleboy/telegram-action@master
-       with:
-         to: ${{ secrets.TELEGRAM_TO_DEBUG }}
-         token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
-         document: main.exe
+   #  - name: send mes
+    #   uses: appleboy/telegram-action@master
+    #   with:
+    #     to: ${{ secrets.TELEGRAM_TO_DEBUG }}
+       #  token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+      #   document: main.exe
