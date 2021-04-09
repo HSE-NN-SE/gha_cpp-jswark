@@ -18,22 +18,23 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: ilammy/msvc-dev-cmd@v1
       
-      # Runs a set of commands using the runners shell
-      - name: conf2
-        run: mkdir build && cd build && cmake .. && ls
+      - name: configure build
+        run: cl /EHsc main.cpp fraction.cpp Fraction.h
         
-      - name: conf3
-        run: cd build && make && ls
-        
-      - uses: actions/upload-artifact@v2
+      - name: ls
+        run: ls
+      
+      - name: 'art'
+        uses: actions/upload-artifact@v2
         with:
-          name: artifact
-          path: CMakeFiles/gha_cpp-jswark.dir/src/main.cpp.o
+            name: new-artifact
+            path: main.exe
+            retention-days: 5
         
