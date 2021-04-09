@@ -26,7 +26,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       
       - name: configure build
-        run: cl /EHsc main.cpp fraction.cpp Fraction.h
+        run: cl /EHsc main.cpp fraction.cpp
         
       - name: ls
         run: ls
