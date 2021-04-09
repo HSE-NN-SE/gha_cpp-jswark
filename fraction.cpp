@@ -1,5 +1,5 @@
 // Copyright 2020 jswark
-#include "../include/Fraction.h"
+#include "Fraction.h"
 
 int Fraction::getNumerator() { return this->numerator; }
 int Fraction::getDenominator() { return this->denominator; }

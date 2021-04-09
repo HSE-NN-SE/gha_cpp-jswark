@@ -1,6 +1,6 @@
 // Copyright 2020 jswark
 
-#include "../include/Fraction.h"
+#include "Fraction.h"
 #include <iostream>
 
 int main() {
