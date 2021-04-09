@@ -42,7 +42,7 @@ jobs:
     - name: load art 
       uses: actions/download-artifact@master 
       with: 
-       name: main 
+       name: new-artifact
 
     - name: send 
       uses: appleboy/telegram-action@master 
