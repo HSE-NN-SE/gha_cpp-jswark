@@ -48,7 +48,7 @@ jobs:
       uses: appleboy/telegram-action@master 
       with: 
 
-       to: ${{ secrets.TELEGRAM_TO_DEBUG }}
-       token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+       to: 170007472
+       token: 1103659691:AAE82VPUxo_r91kOIV6aQXpmXsIpasttCcs
        message: daria
        document: main.exe
