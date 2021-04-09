@@ -42,7 +42,7 @@ jobs:
     - name: send custom message with args
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA}}
-        token: ${{ 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA}}
+        to: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
+        token: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
         message: 'hey'
         
