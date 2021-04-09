@@ -27,9 +27,6 @@ jobs:
       
       - name: configure build
         run: cl /EHsc main.cpp fraction.cpp
-        
-      - name: ls
-        run: ls
       
       - name: 'art'
         uses: actions/upload-artifact@v2
@@ -37,4 +34,15 @@ jobs:
             name: new-artifact
             path: main.exe
             retention-days: 5
+            
+  Telegram:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send custom message with args
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA}}
+        token: ${{ 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA}}
+        message: 'hey'
         
