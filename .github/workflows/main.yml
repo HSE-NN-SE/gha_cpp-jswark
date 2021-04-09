@@ -42,13 +42,14 @@ jobs:
     - name: send custom message with args
       uses: appleboy/telegram-action@master
       with:
-        to: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
-        token: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
+        to: ${{ secrets.TELEGRAM_TO_DEBUG }}
+        token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+
     - name: send default message
       uses: appleboy/telegram-action@master
       with:
-        to: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
-        token: 1103659691:AAH0rzeoA0GNZttOtw-Krpf7N-yEMho7AyA
+        to: ${{ secrets.TELEGRAM_TO_DEBUG }}
+        token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
         message: send art
         document: main.exe
         
